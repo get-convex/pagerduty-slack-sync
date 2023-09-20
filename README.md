@@ -5,7 +5,7 @@ Syncs one or more PagerDuty on-call schedules to a Slack channel topic using a C
 
 Run `npx convex init` to initialize a Convex project for this code. 
 
-Open the dashboard with `npx convex init` to access your dev deployment.
+Open the dashboard with `npx convex dashboard` to access your dev deployment.
 
 Under "Settings" -> "Environment Variables", set `PAGERDUTY_API_KEY` with an [API v2 Key](https://support.pagerduty.com/docs/using-the-api#section-generating-an-api-key) and `SLACK_API_KEY` with an [Integrated Bot](https://github.com/PagerDuty/pd-oncall-chat-topic#:~:text=https%3A//my.slack.com/services/new/bot) key. 
 Ensure the bot has been invited to the channel(s) whose topic you'd like to update.

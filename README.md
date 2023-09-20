@@ -30,7 +30,10 @@ For example, one could add the following document:
   ],
 }
 ```
-The channel topic will be updated to match the format `Primary: <Primary Oncall>, Secondary: <Secondary Oncall> | <Previous topic content>`. 
+The channel topic will be updated to match the following format:
+```
+Primary: <Primary On-call>, Secondary: <Secondary On-call>, [<Schedule Name>: <Scheduled On-call>, ...] | <Previous topic content>
+```
 
 ----
 ### Getting Slack and PagerDuty IDs

@@ -16,7 +16,8 @@ const getOncallUser = async function (schedule: string): Promise<string> {
   const override_url = `https://api.pagerduty.com/schedules/${schedule}/overrides`;
   const now = new Date();
   let since = new Date(now);
-  since.setMinutes(since.getMinutes() - 1);
+  // The PagerDuty API gets all users on-call for a schedule within a time bound. The easiest way to get the current on-call is to set a tight 5 second time bound.
+  since.setSeconds(since.getSeconds() - 5);
   let payload: Record<string, string> = {};
   payload["since"] = since.toISOString();
   payload["until"] = now.toISOString();

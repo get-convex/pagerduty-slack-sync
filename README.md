@@ -1,5 +1,8 @@
 # Pagerduty Slack Sync
-Syncs one or more PagerDuty on-call schedules to a Slack channel topic using a Convex backend.
+Syncs one or more PagerDuty on-call schedules to a Slack channel topic using a Convex backend.  
+
+<img width="514" alt="image" src="https://github.com/get-convex/pagerduty-slack-sync/assets/3837919/4e66f744-9fd2-405e-8e84-27cdee8c7b37">
+
 
 ## Initial Setup
 

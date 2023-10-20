@@ -10,7 +10,7 @@ Run `npx convex dev --once` to initialize a [Convex](https://convex.dev) project
 
 Open the dashboard with `npx convex dashboard` to access your dev deployment.
 
-Under "Settings" -> "Environment Variables", set `PAGERDUTY_API_KEY` with an [API v2 Key](https://support.pagerduty.com/docs/using-the-api#section-generating-an-api-key) and `SLACK_API_KEY` with an [Integrated Bot](https://github.com/PagerDuty/pd-oncall-chat-topic#:~:text=https%3A//my.slack.com/services/new/bot) key.
+Under "Settings" -> "Environment Variables", set `PAGERDUTY_API_KEY` with an [API v2 Key](https://support.pagerduty.com/docs/using-the-api#section-generating-an-api-key) and `SLACK_API_KEY` with an [Integrated Bot](https://my.slack.com/services/new/bot) key.
 Ensure the bot has been invited to the channel(s) whose topic you'd like to update.
 
 Optionally, set the `DRY_RUN` variable to a non-empty value to prevent an actual update of the topic; the proposed update will be logged instead. Note that you will need to repeat this process for your production deployment with the appropriate values.
